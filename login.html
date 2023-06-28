@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="my_css/styles.css">
+    <title>BIDIT-Login</title>
+</head>
+
+<body style="background: #f7fbff">
+    <div class="container">
+        <div class="signin-signup">
+            <form class="form-signin" method="post" action="login.php">
+                <h2 class="title">Sign in</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input class="form-control" type="email"  name="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input class="form-control" type="password" name="password" placeholder="Password" required>
+                </div>
+                <div class="input-field">
+                     <i class="fas fa-barcode"></i>
+                    <input class="form-control" type="password" name="token" placeholder="Token Number" >
+                </div>
+
+
+                <div>
+                        <label style="margin-bottom: 5%"><input type="radio" value="seller" name="link"
+                                 /> seller
+                            <input type="radio" value="bidder" name="link"  /> bidder
+                        </label>
+                    </div>
+
+
+
+
+                <button type="submit" class="btn btn-block btn-lg btn-primary">
+                        Login
+                    </button>
+               
+                 <div class="log" style="display: flex">
+             
+              &nbsp;&nbsp;&nbsp;
+              <a href="./signup.html">Create New Account</a>
+            </div>
+                 
+            </form>
+
+
+
+            <form action="" class="sign-up-form">
+                <h2 class="title">Sign up</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password">
+                </div>
+                <input type="submit" value="Sign up" class="btn">
+                <p class="social-text">Or Sign in with social platform</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <p class="account-text">Already have an account? <a href="#" id="sign-in-btn2">Sign in</a></p>
+            </form>
+        </div>
+        <div class="panels-container">
+           
+            <div class="panel right-panel">
+                <div class="content" >
+                    
+                    <img src="./Images/gadgets-auction_1284-22060.avif" alt="" style="width: 400px; margin-right: -540px" 
+                     />
+                   
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
